@@ -46,7 +46,7 @@ class Dummy {
 
     
     for (let i = 0; i < n; i++)
-      r.push(unwrapSchema(this.schema))
+      r.push(unwrapSchema(this))
     return r
   }
 }
