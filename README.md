@@ -11,10 +11,34 @@ Generates dummy data from a given structure.
   const customerSchema = new Dummy({
     name: Dummy.string(), // Default: 2-32, Dummy.string(min, max)
     age: Dummy.number(), // Default: 0-1000, Dummy.number(min, max)
-    favouriteSports: Dummy.array(10, Dummy.string()),
+    favouriteSports: Dummy.array(4, Dummy.string()),
   })
 
   const tenRandomCustomers = userSchema.for(10)
+
+  // tenRandomCustomers [
+  //   {
+  //     "name": "cG0gJj2aYYgM",
+  //     "age": 307,
+  //     "favouriteSports": [
+  //       "gCVKqZjcTzAos3QhMJ",
+  //       "l9dCSBkj",
+  //       "JcVzNURYqqlsd8Fvq7ntpO",
+  //       "oGGUOgm"
+  //     ]
+  //   },
+  //   {
+  //     "name": "XS8JTF",
+  //     "age": 268,
+  //     "favouriteSports": [
+  //       "bRMbGLZn",
+  //       "oEC1as3zZF9t0vkzmo4J",
+  //       "tkOxWobpmza2",
+  //       "q2Tqa7jHHj1Mwd"
+  //     ]
+  //   },
+  //   ...
+  // ]
 ```
 
 ### Nested structure
@@ -29,6 +53,26 @@ Generates dummy data from a given structure.
   })
 
   const fiveRandomBooks = bookSchema.for(5)
+
+  // fiveRandomBooks [
+  //   {
+  //     "title": "c20NyCIUjVYpqAHmXqiPfOlUf9kx1",
+  //     "genre": "E26",
+  //     "author": {
+  //       "name": "YBbOcg6",
+  //       "dateOfBirth": "1970-06-19T08:39:45.022Z"
+  //     }
+  //   },
+  //   {
+  //     "title": "dwrZLqIyzWfZla",
+  //     "genre": "A4SZxA3bNJTu2nfMB",
+  //     "author": {
+  //       "name": "PnwQ1iSbLk7FcZ4NU",
+  //       "dateOfBirth": "2005-05-09T21:12:15.379Z"
+  //     }
+  //   },
+  //   ...
+  // ]
 ```
 
 ### License
