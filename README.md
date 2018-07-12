@@ -3,7 +3,7 @@ Generates dummy data from a given structure.
 
 ## How to import
 ```javascript
-  const simpleRandomData = require('simple-random-data')
+  const Dummy = require('simple-random-data')
 ```
 
 ### Simple usage
