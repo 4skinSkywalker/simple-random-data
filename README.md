@@ -3,7 +3,7 @@ Generates dummy data from a given structure.
 
 ## How to import
 ```javascript
-  const Dummy = require('simple-random-data')
+  const simpleRandomData = require('simple-random-data')
 ```
 
 ### Simple usage
@@ -14,7 +14,7 @@ Generates dummy data from a given structure.
     favouriteSports: Dummy.array(4, Dummy.string()),
   })
 
-  const tenRandomCustomers = userSchema.for(10)
+  const tenRandomCustomers = customerSchema.for(10)
 
   // tenRandomCustomers [
   //   {
